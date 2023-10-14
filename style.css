@@ -1,8 +1,11 @@
 body{
     font-family: 'Exo 2', sans-serif;
     display:flex;
-
+    background-image: url(/fondoweb2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .headerprincipal{
     display: flex;
     align-items: center;
@@ -13,6 +16,7 @@ body{
     top: 0;
     right: 0;
     justify-content: center;
+
 }
 .headerprincipal img{
     width: 100px;
@@ -29,9 +33,122 @@ body{
     margin: 10px;
 }
 .headerprincipal a:hover{
-    background-color: #ffffff;
+    background-color: #34bce0;
+    color: aliceblue;
 
 }
 .botonesheader{
     margin-left: 100px;
 }
+
+.itemsiniciales{
+    position: relative;
+    margin-top: 100px;
+    overflow: hidden;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.itemsiniciales h1{
+    
+    color: white;
+    font-size: 70px;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 25px;
+    border-right: 2px solid #04d4f0; /* Simula el cursor de escritura */
+    overflow: hidden;
+    animation: escribir 3s steps(30) , blink-caret 1s step-end infinite;
+
+}
+@keyframes escribir {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #34bce0;
+    }
+}
+
+/* CODIGO PARA LA ANIMACION DEL BTN CONTINUAR*/
+.itemsiniciales button{
+    margin-left: 700px;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #58afd1;
+    color: #58afd1;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  .draw-border:hover {
+    color: #d6a761;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #ffe593;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+            transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+            transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn {
+    background: none;
+    background-color: #58afd17e;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+  }
+  .btn a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Exo 2', sans-serif;
+  }
+  .btn:focus {
+    outline: 2px dotted #55d7dc;
+  }

@@ -1,7 +1,6 @@
 body{
     font-family: 'Exo 2', sans-serif;
-    display:flex;
-    background-image: url(/fondoweb2.jpg);
+    background-image: url(/fondoweb21.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -31,6 +30,7 @@ body{
     color: black;   
     text-decoration: none;
     margin: 10px;
+    font-size: 20px;
 }
 .headerprincipal a:hover{
     background-color: #34bce0;
@@ -40,10 +40,14 @@ body{
 .botonesheader{
     margin-left: 100px;
 }
+.botonesheader a{
+  font-family: 'Exo 2', sans-serif;
+}
 
 .itemsiniciales{
+    display: flex;
     position: relative;
-    margin-top: 100px;
+    margin-top: 20px;
     overflow: hidden;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
@@ -135,6 +139,8 @@ body{
   }
   
   .btn {
+    margin-left: 450px;
+    justify-content: center;
     background: none;
     background-color: #58afd17e;
     border: none;
@@ -142,8 +148,10 @@ body{
     line-height: 1.5;
     padding: 1em 2em;
     letter-spacing: 0.05rem;
+
   }
   .btn a{
+
     text-decoration: none;
     color: aliceblue;
     font-size: 40px;
@@ -151,4 +159,50 @@ body{
   }
   .btn:focus {
     outline: 2px dotted #55d7dc;
+  }
+
+  .transicion {
+    transition: margin-top 0.3s ease-in-out; /* Propiedad de transición */
+
+  }
+  .transicion :hover{
+    transition: margin-top 0.3s ease-in-out; /* Propiedad de transición */
+
+    margin-top: 20px;
+  }
+
+  .contenido{
+    color: white;
+    font-size: 30px;
+  }
+  .contenido img{
+    width: 310px;
+    border-radius: 200px; 
+    cursor: pointer;
+    margin-top: 200px;
+    margin-right: 180px;
+  }
+  .contenido img:hover{
+    box-shadow: 0 4px 18px rgba(197, 171, 0, 0.89); /* Sombra */
+         
+
+  }
+  
+  
+
+  /* Definicion de IA */
+
+  .definicion{
+    margin-top: 200px;
+    width: 70%;
+    text-align: center;
+    background-color: #d6a76194;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 250px;
+  }
+  .definicion p{
+    
+    font-size: 25px;
+    color: white;
   }
